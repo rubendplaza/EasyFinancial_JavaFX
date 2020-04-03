@@ -1,6 +1,31 @@
 
-# Created by https://www.gitignore.io/api/macos,netbeans
-# Edit at https://www.gitignore.io/?templates=macos,netbeans
+# Created by https://www.gitignore.io/api/java,macos,netbeans
+# Edit at https://www.gitignore.io/?templates=java,macos,netbeans
+
+### Java ###
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
 
 ### macOS ###
 # General
@@ -40,10 +65,6 @@ dist/
 nbdist/
 .nb-gradle/
 
-LabCoverPage/
-ProofOfCompletion/
-ProjectReport/
 Javadoc/
 
-# End of https://www.gitignore.io/api/macos,netbeans
-
+# End of https://www.gitignore.io/api/java,macos,netbeans
