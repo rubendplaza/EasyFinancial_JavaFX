@@ -1,6 +1,6 @@
 
-# Created by https://www.gitignore.io/api/java,macos,netbeans
-# Edit at https://www.gitignore.io/?templates=java,macos,netbeans
+# Created by https://www.gitignore.io/api/netbeans,java,macos
+# Edit at https://www.gitignore.io/?templates=netbeans,java,macos
 
 ### Java ###
 # Compiled class file
@@ -65,6 +65,4 @@ dist/
 nbdist/
 .nb-gradle/
 
-Javadoc/
-
-# End of https://www.gitignore.io/api/java,macos,netbeans
+# End of https://www.gitignore.io/api/netbeans,java,macos
