@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #259DF2#259DF2;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankGUI.LoginScreenController">
+   <children>
+      <AnchorPane layoutX="381.0" layoutY="38.0" prefHeight="324.0" prefWidth="294.0" style="-fx-background-color: #9AD0F5#9AD0F5;">
+         <children>
+            <Text layoutX="44.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign In" textAlignment="CENTER" wrappingWidth="207.0">
+               <font>
+                  <Font name="Arial" size="35.0" />
+               </font>
+            </Text>
+            <TextField fx:id="usernameField" layoutX="44.0" layoutY="122.0" prefHeight="27.0" prefWidth="207.0" promptText="username" style="-fx-border-color: #000000;">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="passwordField" layoutX="44.0" layoutY="175.0" prefHeight="27.0" prefWidth="207.0" promptText="password" style="-fx-border-color: #000000;">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </PasswordField>
+            <Button layoutX="44.0" layoutY="260.0" mnemonicParsing="false" onAction="#loginButton" prefHeight="27.0" prefWidth="207.0" style="-fx-background-color: #259DF2#259DF2;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="loginErrorMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="209.0" prefHeight="17.0" prefWidth="207.0" textFill="#d00303" />
+            <RadioButton layoutX="50.0" layoutY="228.0" mnemonicParsing="false" onAction="#managerRoleButton" selected="true" text="Manager">
+               <toggleGroup>
+                  <ToggleGroup fx:id="roleToggleGroup" />
+               </toggleGroup></RadioButton>
+            <RadioButton layoutX="156.0" layoutY="228.0" mnemonicParsing="false" onAction="#customerRoleButton" text="Customer" toggleGroup="$roleToggleGroup" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="438.0" fitWidth="382.0" layoutX="63.0" layoutY="-19.0" opacity="0.29" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/loginImage.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#f3fafe" layoutX="81.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Easy Financial" wrappingWidth="246.76055908203125">
+         <font>
+            <Font name="Arial" size="31.0" />
+         </font>
+      </Text>
+      <Text fill="#f3fafe" layoutX="81.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Online banking made easy with Easy Financial! Sign in as either a manager or customer." wrappingWidth="219.84375">
+         <font>
+            <Font name="Arial" size="11.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

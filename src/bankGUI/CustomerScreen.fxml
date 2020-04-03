@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #259DF2#259DF2;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankGUI.CustomerScreenController">
+   <children>
+      <AnchorPane layoutX="23.0" layoutY="35.0" prefHeight="360.0" prefWidth="405.0" style="-fx-background-color: #9AD0F5#9AD0F5;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Text fill="WHITE" layoutX="10.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deposit:" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="13.6640625">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="10.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Withdraw:" AnchorPane.leftAnchor="10.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="10.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Online Purchase:" AnchorPane.leftAnchor="10.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="10.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Get Balance:" AnchorPane.leftAnchor="10.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="depositAmountField" layoutX="10.0" layoutY="41.0" prefHeight="27.0" prefWidth="230.0" promptText="amount" AnchorPane.leftAnchor="10.0" />
+            <Button layoutX="253.0" layoutY="41.0" mnemonicParsing="false" onAction="#depositButton" prefHeight="27.0" prefWidth="142.0" text="Deposit" AnchorPane.rightAnchor="10.0" />
+            <TextField fx:id="withdrawAmountField" layoutX="10.0" layoutY="113.0" prefHeight="27.0" prefWidth="230.0" promptText="amount" AnchorPane.leftAnchor="10.0" />
+            <Button layoutX="253.0" layoutY="113.0" mnemonicParsing="false" onAction="#withdrawButton" prefHeight="27.0" prefWidth="142.0" text="Withdraw" AnchorPane.rightAnchor="10.0" />
+            <Button layoutX="253.0" layoutY="184.0" mnemonicParsing="false" onAction="#purchaseButton" prefHeight="27.0" prefWidth="142.0" text="Purchase" AnchorPane.rightAnchor="10.0" />
+            <TextField fx:id="purchaseAmountField" layoutX="10.0" layoutY="184.0" prefHeight="27.0" prefWidth="230.0" promptText="amount" AnchorPane.leftAnchor="10.0" />
+            <Button layoutX="10.0" layoutY="256.0" mnemonicParsing="false" onAction="#getBalanceButton" prefHeight="27.0" prefWidth="280.0" text="Balance" AnchorPane.bottomAnchor="77.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+            <Label fx:id="depositErrorMessage" alignment="CENTER" layoutX="87.0" layoutY="17.0" prefHeight="20.0" prefWidth="308.0" textFill="RED" AnchorPane.rightAnchor="10.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="withdrawErrorMessage" alignment="CENTER" layoutX="103.0" layoutY="89.0" prefHeight="20.0" prefWidth="292.0" textFill="RED" AnchorPane.rightAnchor="10.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="purchaseErrorMessage" alignment="CENTER" layoutX="159.0" layoutY="159.0" prefHeight="20.0" prefWidth="236.0" textFill="RED" AnchorPane.rightAnchor="10.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Text fill="#259df2" layoutX="10.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[0 &lt;= balance &lt; 10K] Silver Level: $20 Online Purchase Fee " textAlignment="CENTER" wrappingWidth="385.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Text fill="#259df2" layoutX="10.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[10K &lt;= balance &lt; 20K] Gold Level: $10 Online Purchase Fee " textAlignment="CENTER" wrappingWidth="385.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Text fill="#259df2" layoutX="10.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[20K &lt;= balance] Platinum Level: No Online Purchase Fee " textAlignment="CENTER" wrappingWidth="385.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+      <AnchorPane layoutX="376.0" layoutY="45.0" prefHeight="322.0" prefWidth="215.0" style="-fx-background-color: #9AD0F5#9AD0F5 #9AD0F5#9AD0F5;" AnchorPane.bottomAnchor="58.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label fx:id="usernameDisplayLabel" alignment="CENTER" layoutX="20.0" layoutY="81.0" prefHeight="29.0" prefWidth="175.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Text fill="WHITE" layoutX="41.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logged in as:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="64.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Balance:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Label fx:id="balanceDisplayLabel" alignment="CENTER" layoutX="20.0" layoutY="169.0" prefHeight="29.0" prefWidth="134.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Text fill="WHITE" layoutX="32.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Level:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Label fx:id="levelDisplayLabel" alignment="CENTER" layoutX="41.0" layoutY="252.0" prefHeight="29.0" prefWidth="134.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button layoutX="523.0" layoutY="353.0" mnemonicParsing="false" onAction="#logOutButton" prefHeight="27.0" prefWidth="100.0" text="Log out" />
+   </children>
+</AnchorPane>
