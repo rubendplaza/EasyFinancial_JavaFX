@@ -65,4 +65,9 @@ dist/
 nbdist/
 .nb-gradle/
 
+Javadoc/
+LabCoverPage/
+ProjectReport/
+ProofOfCompletion/
+
 # End of https://www.gitignore.io/api/netbeans,java,macos
